@@ -1,0 +1,10 @@
+---
+id: 4
+name: run2_2018_pp_nano
+tier: nano
+ecm: 13.0
+recommended_gt: whatever
+datasets:  # TODO: how to identify this as an adapter other than via duck-typing?
+  adapter: order_datasets
+  arguments:
+    campaign_name: run2_2018_pp_nano
