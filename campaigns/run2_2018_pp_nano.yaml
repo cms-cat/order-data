@@ -2,9 +2,14 @@
 id: 4
 name: run2_2018_pp_nano
 tier: nano
-ecm: 13.0
-recommended_gt: whatever
-datasets:  # TODO: how to identify this as an adapter other than via duck-typing?
-  adapter: order_datasets
+# lazy_ecm: 34
+lazy_ecm:
+  adapter: xsdb
   arguments:
-    campaign_name: run2_2018_pp_nano
+    foo: 123
+recommended_gt:
+  gt: whatever
+# datasets:  # TODO: how to identify this as an adapter other than via duck-typing?
+#   adapter: order_datasets
+#   arguments:
+#     campaign_name: run2_2018_pp_nano
