@@ -1,3 +1,9 @@
 ---
 id: 2
 name: wjets
+das_name: /ciaociaociao
+nevents: 2_000_000
+files:
+  adapter: dbs_adapter
+  arguments:
+    dataset_key: &das_name

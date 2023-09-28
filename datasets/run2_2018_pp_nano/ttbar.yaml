@@ -1,3 +1,9 @@
 ---
 id: 1
 name: ttbar
+das_name: &das "/TTbb_4f_TTToSemiLeptonic_TuneCP5-Powheg-Openloops-Pythia8/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1-v1/NANOAODSIM"
+nevents: 2_000_000
+files:
+  adapter: dbs_adapter
+  arguments:
+    dataset_key: *das
