@@ -1,19 +1,23 @@
 ---
 id: 4
+
 name: run2_2018_pp_nano
-tier: nano
-# lazy_ecm: 34
-ecm:
+
+ecm: &xsdb
   adapter: xsdb
   arguments:
     foo: 123
+  key: ecm
+
+tier:
+  <<: *xsdb
+  key: data_tier
 
 recommended_gt:
   gt: whatever
 
-  
-dataset:  
+datasets:
   adapter: order_datasets
   arguments:
-     campaign_name: run2_2018_pp_nano
-     
+    campaign_name: run2_2018_pp_nano
+  key: datasets
