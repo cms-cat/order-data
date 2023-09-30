@@ -1,7 +1,7 @@
 ---
 id: 4
 
-name: run2_2018_pp_nano
+name: &campaign_name run2_2018_pp_nano
 
 ecm: &xsdb
   adapter: xsdb
@@ -17,7 +17,9 @@ recommended_gt:
   gt: whatever
 
 datasets:
-  adapter: order_datasets
-  arguments:
-    campaign_name: run2_2018_pp_nano
-  key: datasets
+  class_name: Dataset
+  objects:
+    adapter: order_datasets
+    arguments:
+      campaign_name: *campaign_name
+    key: datasets
