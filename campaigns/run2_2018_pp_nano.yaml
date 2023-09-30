@@ -13,8 +13,7 @@ tier:
   <<: *xsdb
   key: data_tier
 
-recommended_gt:
-  gt: whatever
+recommended_global_tag: the_global_tag
 
 datasets:
   class_name: Dataset
