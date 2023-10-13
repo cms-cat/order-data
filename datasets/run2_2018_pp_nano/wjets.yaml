@@ -1,9 +1,28 @@
 ---
 id: 2
 name: wjets
-das_name: /ciaociaociao
-nevents: 2_000_000
-files:
-  adapter: dbs_adapter
-  arguments:
-    dataset_key: &das_name
+variations:
+  nominal: &nominal
+    keys: &keys
+      - "/WJets/RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1-v1/NANOAODSIM"
+
+    n_events: &dataset_adapter
+      adapter: das_dataset
+      key: n_events
+      arguments:
+        keys: *keys
+
+    n_files:
+      <<: *dataset_adapter
+      key: n_files
+
+    lfns:
+      adapter: das_lfns
+      key: lfns
+      arguments:
+        keys: *keys
+
+    gen_order: lo
+
+  scale_up:
+    <<: *nominal

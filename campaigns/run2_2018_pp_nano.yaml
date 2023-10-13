@@ -5,9 +5,9 @@ name: &campaign_name run2_2018_pp_nano
 
 ecm: &xsdb
   adapter: xsdb
+  key: ecm
   arguments:
     foo: 123
-  key: ecm
 
 tier:
   <<: *xsdb
@@ -19,6 +19,6 @@ datasets:
   class_name: Dataset
   objects:
     adapter: order_datasets
+    key: datasets
     arguments:
       campaign_name: *campaign_name
-    key: datasets

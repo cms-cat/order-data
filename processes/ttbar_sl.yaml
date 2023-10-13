@@ -1,0 +1,16 @@
+---
+name: ttbar_sl
+id: 10
+
+cross_section:
+  13.6:
+    nlo: 831.76
+
+parent_processes:
+  class_name: Process
+  objects:
+    adapter: order_processes
+    key: processes
+    arguments:
+      process_names:
+        - ttbar
