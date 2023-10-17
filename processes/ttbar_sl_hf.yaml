@@ -1,12 +1,12 @@
 ---
-name: ttbar
-id: 1
+name: ttbar_sl_hf
+id: 12
 
 cross_section:
   13.6:
     nlo: 831.76
 
-processes:
+parent_processes:
   class_name: Process
   objects:
     adapter: order_processes

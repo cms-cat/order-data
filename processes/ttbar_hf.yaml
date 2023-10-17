@@ -1,6 +1,6 @@
 ---
-name: ttbar_sl
-id: 10
+name: ttbar_hf
+id: 11
 
 cross_section:
   13.6:
