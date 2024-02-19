@@ -1,6 +1,13 @@
 ---
 id: 1
 name: ttbar
+
+campaign:
+  adapter: order_campaign
+  key: campaign
+  arguments:
+    campaign_name: run2_2018_pp_nano
+
 variations:
   nominal: &nominal
     keys: &keys
